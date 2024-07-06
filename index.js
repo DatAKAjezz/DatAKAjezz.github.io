@@ -20,23 +20,48 @@ function initializeGame() {
 function render() {
     const container = document.getElementById("wordsContainer");
     container.innerHTML = "";
+
     words.forEach((wordObj, wordIndex) => {
         const wordRow = document.createElement("div");
         wordRow.className = "word-row";
 
+        //render
         const letterBoxes = document.createElement("div");
         letterBoxes.className = "letter-boxes";
-        for (let i = 0; i < wordObj.word.length; i++) {
-            const box = document.createElement("div");
-            box.className = "letter-box";
-            box.onclick = () => revealLetter(wordIndex, i);
-            
-            if (revealedLetters[wordIndex][i]) {
-                box.textContent = wordObj.word[i];
-                box.classList.add("revealed");
-            }
-            letterBoxes.appendChild(box);
+
+        let countLetters = 0
+
+        for (let i = 0; i < wordObj.word.length; i++){
+            if (revealedLetters[wordIndex][i]) countLetters++;
         }
+
+        if (countLetters === wordObj.word.length){
+            for (let i = 0; i < wordObj.word.length; i++) {
+                const box = document.createElement("div");
+                box.className = "letter-box";
+                box.onclick = () => revealLetter(wordIndex, i);
+                
+                if (revealedLetters[wordIndex][i]) {
+                    box.textContent = wordObj.word[i];
+                    box.classList.add("revealed");
+                    box.classList.add("all-revealed");
+                }
+                letterBoxes.appendChild(box);
+            }
+        }else{     
+            for (let i = 0; i < wordObj.word.length; i++) {
+                const box = document.createElement("div");
+                box.className = "letter-box";
+                box.onclick = () => revealLetter(wordIndex, i);
+                
+                if (revealedLetters[wordIndex][i]) {
+                    box.textContent = wordObj.word[i];
+                    box.classList.add("revealed");
+                }
+                letterBoxes.appendChild(box);
+            }
+        }
+
         wordRow.appendChild(letterBoxes);
 
         const buttons = document.createElement("div");
@@ -55,6 +80,7 @@ function render() {
         wordRow.appendChild(buttons);
        
         container.appendChild(wordRow);
+
     });
 }
 
