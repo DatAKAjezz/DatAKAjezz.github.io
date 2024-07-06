@@ -59,7 +59,7 @@ function render() {
 }
 
 function revealLetter(wordIndex, letterIndex) {
-    revealedLetters[wordIndex][letterIndex] = true;
+    revealedLetters[wordIndex][letterIndex] = !revealedLetters[wordIndex][letterIndex] ;
     render();
 }
 
