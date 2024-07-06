@@ -1,0 +1,73 @@
+const words = [
+    { word: "sanhô", hint: "Lá phổi của Trái Đất" , revealsNumber : 0},
+    { word: "sóngthần", hint: "Một thảm họa thiên nhiên",revealsNumber : 0 },
+    { word: "tuyếtlở", hint: "Một trong những hậu quả của hiện tượng nóng lên toàn cầu", revealsNumber : 0},
+    { word: "saobiển", hint: "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt", revealsNumber : 0 },
+    { word: "cáthờnbơn", hint: "Người ta hay gọi nó là chiếc lưỡi biết bơi", revealsNumber : 0 },
+    { word: "Thủytriềuđỏ", hint : "Hiện tượng tự nhiên ở biển có màu sắc đặc trưng, thường gây hại cho sinh vật biển", revealsNumber : 0}
+];
+
+let revealedLetters = [];
+
+function initializeGame() {
+    revealedLetters = words.map(wordObj => new Array(wordObj.word.length).fill(false));
+    render();
+}
+
+function render() {
+    const container = document.getElementById("wordsContainer");
+    container.innerHTML = "";
+    words.forEach((wordObj, wordIndex) => {
+        const wordRow = document.createElement("div");
+        wordRow.className = "word-row";
+
+        const letterBoxes = document.createElement("div");
+        letterBoxes.className = "letter-boxes";
+        for (let i = 0; i < wordObj.word.length; i++) {
+            const box = document.createElement("div");
+            box.className = "letter-box";
+            box.onclick = () => revealLetter(wordIndex, i);
+            
+            if (revealedLetters[wordIndex][i]) {
+                box.textContent = wordObj.word[i];
+                box.classList.add("revealed");
+            }
+            letterBoxes.appendChild(box);
+        }
+        wordRow.appendChild(letterBoxes);
+
+        const buttons = document.createElement("div");
+        buttons.className = "buttons";
+
+        const revealButton = document.createElement("button");
+        revealButton.textContent = "Hiện tất cả";
+        revealButton.onclick = () => revealWord(wordIndex);
+        buttons.appendChild(revealButton);
+
+        const hintButton = document.createElement("button");
+        hintButton.textContent = "Gợi ý";
+        hintButton.onclick = () => showHint(wordIndex);
+        buttons.appendChild(hintButton);
+
+        wordRow.appendChild(buttons);
+       
+        container.appendChild(wordRow);
+    });
+}
+
+function revealLetter(wordIndex, letterIndex) {
+    revealedLetters[wordIndex][letterIndex] = true;
+    render();
+}
+
+function revealWord(wordIndex) {
+    revealedLetters[wordIndex] = revealedLetters[wordIndex].map(() => true);  
+    render();
+}
+
+function showHint(wordIndex) {
+    const hintContainer = document.getElementById("hintContainer");
+    hintContainer.textContent = words[wordIndex].hint;
+}
+
+window.onload = initializeGame;

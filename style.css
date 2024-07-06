@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-image: url("./imgs/sea2.jpg");
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom : 50px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 50% 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.title-container{
+    display: flex;
+    padding-top : 40px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 40%;
+    max-height: 65px;
+    margin-bottom : 40px;
+    .title{
+        font-family: 'JetBrains Mono';
+        font-size : 3rem;
+        font-weight: bold;
+        color : white;
+    }
+}
+
+.title-container > div{
+    >img{
+        
+        border-radius: 50%;
+        height: 120px;
+    }
+}
+
+h1 {
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+#wordsContainer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height:380px;
+    overflow-y: scroll;
+}
+.word-row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.letter-boxes {
+    display: flex;
+}
+.letter-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.letter-box:hover {
+    background-color: #e6f2ff;
+}
+.revealed {
+    background-color: #007bff;
+    color: white;
+}
+.buttons {
+    display: flex;
+}
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #218838;
+}
+#hintContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.all-revealed {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
