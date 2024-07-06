@@ -1,12 +1,15 @@
 const words = [
-    { word: "sanhô", hint: "Lá phổi của Trái Đất" , revealsNumber : 0},
-    { word: "sóngthần", hint: "Một thảm họa thiên nhiên",revealsNumber : 0 },
-    { word: "tuyếtlở", hint: "Một trong những hậu quả của hiện tượng nóng lên toàn cầu", revealsNumber : 0},
-    { word: "saobiển", hint: "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt", revealsNumber : 0 },
-    { word: "cáthờnbơn", hint: "Người ta hay gọi nó là chiếc lưỡi biết bơi", revealsNumber : 0 },
-    { word: "Thủytriềuđỏ", hint : "Hiện tượng tự nhiên ở biển có màu sắc đặc trưng, thường gây hại cho sinh vật biển", revealsNumber : 0}
+    { word: "san ho", hint: "Lá phổi của Trái Đất" , revealsNumber : 0},
+    { word: "song than", hint: "Một thảm họa thiên nhiên",revealsNumber : 0 },
+    { word: "tuyet lo", hint: "Một trong những hậu quả của hiện tượng nóng lên toàn cầu", revealsNumber : 0},
+    { word: "sao bien", hint: "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt", revealsNumber : 0 },
+    { word: "ca thon bon", hint: "Người ta hay gọi nó là chiếc lưỡi biết bơi", revealsNumber : 0 },
+    { word: "thuy trieu do", hint : "Hiện tượng tự nhiên ở biển có màu sắc đặc trưng, thường gây hại cho sinh vật biển", revealsNumber : 0}
 ];
 
+words.map((val) => {
+    val.word = val.word.split(" ").join('');
+})
 let revealedLetters = [];
 
 function initializeGame() {
