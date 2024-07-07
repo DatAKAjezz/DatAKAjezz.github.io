@@ -77,6 +77,7 @@ function render() {
         }else{
             revealButton.textContent = "Ẩn tất cả..";
             revealButton.onclick = () => hideWord(wordIndex);
+            revealButton.style.backgroundColor = "#008080"
         }
 
         buttons.appendChild(revealButton);
