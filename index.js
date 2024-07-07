@@ -111,6 +111,9 @@ function hideWord(wordIndex) {
 function showHint(wordIndex) {
     const hintContainer = document.getElementById("hintContainer");
     hintContainer.textContent = words[wordIndex].hint;
+    hintContainer.onclick = (e) => {
+        e.target.textContent = "";
+    }
 }
 
 function removeDiacritics(str) {
