@@ -124,3 +124,43 @@ button:hover {
     border-color: #dc3545;
     color: white;
 }
+
+/* Vocabs*/
+#vocabularyContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Vocab */
+#vocabularyButton {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#vocabularyButton:hover {
+    background-color: #0056b3;
+}
+
+#vocabularyDisplay {
+    min-height: 30px;
+    min-width: 300px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}

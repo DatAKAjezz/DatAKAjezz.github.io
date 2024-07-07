@@ -123,6 +123,38 @@ function removeDiacritics(str) {
               .replace(/đ/g, 'd').replace(/Đ/g, 'D');
 }
 
-console.log(removeDiacritics("Xin chào tôi là người Việt Nam"));
+//Vocabs
+const vocabulary = [
+    "Áo dài", "Phở", "Nón lá", "Trống đồng", "Chợ nổi",
+    "Bánh chưng", "Ao làng", "Đèn lồng", "Trà đá", "Xe ôm",
+    "Cây tre", "Áo bà ba", "Cải lương", "Võ thuật", "Đũa",
+    "Bún chả", "Lễ hội", "Đền chùa", "Cây đa", "Sân đình",
+    "Bánh mì", "Cà phê sữa đá", "Khăn rằn", "Nước mắm", "Vịnh Hạ Long",
+    "Trầu cau", "Quạt giấy", "Gánh hàng", "Tết Nguyên đán", "Cờ tướng",
+    "Nhà sàn", "Đàn bầu", "Xích lô", "Trái sầu riêng", "Múa lân",
+    "Quốc phục", "Chùa Một Cột", "Phố cổ", "Lịch âm", "Trăng rằm",
+    "Cồng chiêng", "Bánh tráng", "Thuyền thúng", "Lồng đèn", "Bún bò Huế",
+    "Dép lào", "Áo tứ thân", "Gỏi cuốn", "Tò he", "Cây bưởi"
+];
 
-window.onload = initializeGame;
+let vocabIndex = 0;
+
+function getVocabulary() {
+    return vocabulary[vocabIndex++];
+}
+
+function showVocabulary() {
+    const vocabularyDisplay = document.getElementById("vocabularyDisplay");
+    vocabularyDisplay.textContent = getVocabulary();
+}
+
+function initializeVocabulary() {
+    const vocabularyButton = document.getElementById("vocabularyButton");
+    vocabularyButton.onclick = showVocabulary;
+}
+
+window.onload = () => {
+    initializeGame();
+    initializeVocabulary();
+};
+
