@@ -109,15 +109,6 @@ button {
 button:hover {
     background-color: #218838;
 }
-#hintContainer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    text-align: ce  nter;
-    width: 100%;
-    max-width: 800px;
-}
 
 .all-revealed {
     background-color: #dc3545;
@@ -133,8 +124,8 @@ button:hover {
 }
 
 
-/* MARK:VOCAB */
-.hint-word {
+/* MARK:VOCAB-HINTS */
+.hints-vocabs-wrapper {
     display: flex;
     width: 100%;
     width: 1040px; 
@@ -155,6 +146,7 @@ button:hover {
 }
 
 #hintContainer {
+    background-color: #f8f9fa;
     margin-top : 16px;
     margin-right: 10px; 
     display: flex;
@@ -162,6 +154,7 @@ button:hover {
     justify-content : center;
     height: 100px;
     text-align : center;
+    border-radius: 0px 5px 5px 0px;
 }
 
 #vocabularyContainer {
@@ -206,7 +199,9 @@ button:hover {
 }
 
 #hint-btn{
-    float : left;
+    height: 100px; 
+    margin-top : 16px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 @keyframes reveal-scale{
