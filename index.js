@@ -1,7 +1,10 @@
+
+//MARK: WORDS GUESSING
 const words = [
     { word: "san hô", hint: "Lá phổi của Trái Đất" , revealsNumber : 0},
     { word: "sóng thần", hint: "Một thảm họa thiên nhiên",revealsNumber : 0 },
-    { word: "tuyết lở", hint: "Một trong những hậu quả của hiện tượng nóng lên toàn cầu", revealsNumber : 0},
+    // { word: "cá mập", hint: "Một loài cái không gầy"},
+    { word: "băng tan", hint: "Một trong những hậu quả của hiện tượng nóng lên toàn cầu", revealsNumber : 0},
     { word: "sao biển", hint: "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt", revealsNumber : 0 },
     { word: "cá thờn bơn", hint: "Người ta hay gọi nó là chiếc lưỡi biết bơi", revealsNumber : 0 },
     { word: "thủy triều đỏ", hint : "Hiện tượng tự nhiên ở biển có màu sắc đặc trưng, thường gây hại cho sinh vật biển", revealsNumber : 0}
@@ -40,14 +43,19 @@ function render() {
                 const box = document.createElement("div");
                 box.className = "letter-box";
                 box.onclick = () => revealLetter(wordIndex, i);
-                
-                if (revealedLetters[wordIndex][i]) {
-                    box.textContent = wordObj.word[i];
-                    box.classList.add("revealed");
-                    box.classList.add("all-revealed");
+                box.textContent = wordObj.word[i];
+                box.classList.add("revealed");
+
+                if (wordObj.revealsNumber === 0){
+                    setTimeout(() => {
+                        box.classList.add("all-revealed");
+                    },(i + 1) *  100)
+                }else{
+                    box.classList.add("all-revealed-normalized")
                 }
                 letterBoxes.appendChild(box);
             }
+            wordObj.revealsNumber++;
         }else{ 
             let tmpString = removeDiacritics(wordObj.word);    
             for (let i = 0; i < wordObj.word.length; i++) {
@@ -74,7 +82,7 @@ function render() {
             revealButton.textContent = "Hiện tất cả";
             revealButton.onclick = () => revealWord(wordIndex);
 
-        }else{
+        }else{      
             revealButton.textContent = "Ẩn tất cả..";
             revealButton.onclick = () => hideWord(wordIndex);
             revealButton.style.backgroundColor = "#008080"
@@ -123,34 +131,38 @@ function removeDiacritics(str) {
               .replace(/đ/g, 'd').replace(/Đ/g, 'D');
 }
 
-//Vocabs
-const vocabulary = [
-    "Áo dài", "Phở", "Nón lá", "Trống đồng", "Chợ nổi",
-    "Bánh chưng", "Ao làng", "Đèn lồng", "Trà đá", "Xe ôm",
-    "Cây tre", "Áo bà ba", "Cải lương", "Võ thuật", "Đũa",
-    "Bún chả", "Lễ hội", "Đền chùa", "Cây đa", "Sân đình",
-    "Bánh mì", "Cà phê sữa đá", "Khăn rằn", "Nước mắm", "Vịnh Hạ Long",
-    "Trầu cau", "Quạt giấy", "Gánh hàng", "Tết Nguyên đán", "Cờ tướng",
-    "Nhà sàn", "Đàn bầu", "Xích lô", "Trái sầu riêng", "Múa lân",
-    "Quốc phục", "Chùa Một Cột", "Phố cổ", "Lịch âm", "Trăng rằm",
-    "Cồng chiêng", "Bánh tráng", "Thuyền thúng", "Lồng đèn", "Bún bò Huế",
-    "Dép lào", "Áo tứ thân", "Gỏi cuốn", "Tò he", "Cây bưởi"
-];
+//MARK: VOCABs
 
-let vocabIndex = 0;
+let vocabs;
+let currentVocab;
 
-function getVocabulary() {
-    return vocabulary[vocabIndex++];
+fetch('vocabulary.json')
+    .then(res => res.json())
+    .then((data) => {
+        vocabs = data.vocabulary;
+        getNewVocabulary(); 
+    })
+
+let Index = 0;
+function getNewVocabulary() {
+    currentVocab = vocabs[Index++];
+    const vocabularyDisplay = document.getElementById("vocabularyDisplay");
+    vocabularyDisplay.textContent = currentVocab.question;
 }
 
-function showVocabulary() {
-    const vocabularyDisplay = document.getElementById("vocabularyDisplay");
-    vocabularyDisplay.textContent = getVocabulary();
+function showAnswer() {
+    if (currentVocab) {
+        const vocabularyDisplay = document.getElementById("vocabularyDisplay");
+        vocabularyDisplay.textContent = currentVocab.word;
+    }
 }
 
 function initializeVocabulary() {
-    const vocabularyButton = document.getElementById("vocabularyButton");
-    vocabularyButton.onclick = showVocabulary;
+    const newVocabButton = document.getElementById("newVocabButton");
+    const showAnswerButton = document.getElementById("showAnswerButton");
+    
+    newVocabButton.onclick = getNewVocabulary;
+    showAnswerButton.onclick = showAnswer;
 }
 
 window.onload = () => {

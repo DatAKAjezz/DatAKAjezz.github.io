@@ -25,12 +25,19 @@
 
 
     <div id="wordsContainer"></div>
-    <div id="hintContainer"></div>
-
+  
+    <div class="hint-word">
+        <button style = "height: 100px; margin-top : 16px;">Gợi ý</button>
+        <div id="hintContainer">
+        </div>
         <div id="vocabularyContainer">
-            <button id="vocabularyButton">New Vocab</button>
+            <div class="button-container">
+                <button id="newVocabButton">Question</button>
+                <button id="showAnswerButton">Show Vocab</button>  
+            </div>
             <div id="vocabularyDisplay"></div>
         </div>
+    </div>
     
     <script src = "index.js"></script>
 </body>

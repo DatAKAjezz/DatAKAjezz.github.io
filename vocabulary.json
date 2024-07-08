@@ -1,0 +1,204 @@
+{
+    "vocabulary": [
+      {
+        "word": "Áo dài",
+        "question": "Trang phục truyền thống nào của Việt Nam thường được phụ nữ mặc trong các dịp lễ quan trọng?"
+      },
+      {
+        "word": "Phở",
+        "question": "Món ăn nào được coi là quốc hồn quốc túy của Việt Nam, thường được ăn vào buổi sáng?"
+      },
+      {
+        "word": "Nón lá",
+        "question": "Vật dụng nào được sử dụng để che nắng và mưa, có hình nón và được làm từ lá cọ?"
+      },
+      {
+        "word": "Trống đồng",
+        "question": "Nhạc cụ cổ nào là biểu tượng văn hóa của Việt Nam, thường được tìm thấy trong các di chỉ khảo cổ?"
+      },
+      {
+        "word": "Chợ nổi",
+        "question": "Loại chợ đặc biệt nào thường thấy ở miền Tây Nam Bộ, diễn ra trên sông?"
+      },
+      {
+        "word": "Bánh chưng",
+        "question": "Món ăn truyền thống nào được làm từ gạo nếp, đậu xanh và thịt lợn, thường xuất hiện trong dịp Tết Nguyên đán?"
+      },
+      {
+        "word": "Ao làng",
+        "question": "Yếu tố nào thường xuất hiện trong cấu trúc làng quê Việt Nam, dùng để chứa nước và nuôi cá?"
+      },
+      {
+        "word": "Đèn lồng",
+        "question": "Vật dụng nào thường được treo trong dịp Tết Trung thu, có hình dáng tròn hoặc ngôi sao?"
+      },
+      {
+        "word": "Trà đá",
+        "question": "Đồ uống nào phổ biến ở Việt Nam, thường được bán ở vỉa hè và được pha từ trà xanh?"
+      },
+      {
+        "word": "Xe ôm",
+        "question": "Phương tiện giao thông công cộng không chính thức nào phổ biến ở Việt Nam, sử dụng xe máy?"
+      },
+      {
+        "word": "Cây tre",
+        "question": "Loại cây nào được xem là biểu tượng của sự dẻo dai và sức sống mãnh liệt trong văn hóa Việt Nam?"
+      },
+      {
+        "word": "Áo bà ba",
+        "question": "Trang phục truyền thống nào thường được phụ nữ miền Nam Việt Nam mặc hàng ngày?"
+      },
+      {
+        "word": "Cải lương",
+        "question": "Loại hình nghệ thuật sân khấu truyền thống nào của miền Nam Việt Nam kết hợp giữa âm nhạc và kịch?"
+      },
+      {
+        "word": "Võ thuật",
+        "question": "Môn nghệ thuật tự vệ nào có nguồn gốc từ Việt Nam, như Vovinam chẳng hạn?"
+      },
+      {
+        "word": "Đũa",
+        "question": "Dụng cụ ăn uống nào phổ biến trong văn hóa Việt Nam, thường được làm từ tre hoặc gỗ?"
+      },
+      {
+        "word": "Bún chả",
+        "question": "Món ăn đặc trưng của Hà Nội gồm bún, thịt lợn nướng và nước chấm chua ngọt được gọi là gì?"
+      },
+      {
+        "word": "Lễ hội",
+        "question": "Sự kiện văn hóa nào thường diễn ra ở đình làng hoặc đền chùa, mang tính cộng đồng cao?"
+      },
+      {
+        "word": "Đền chùa",
+        "question": "Công trình kiến trúc tôn giáo nào phổ biến ở Việt Nam, thường là nơi thờ Phật hoặc các vị thần?"
+      },
+      {
+        "word": "Cây đa",
+        "question": "Loại cây nào thường xuất hiện ở cổng làng và được xem là biểu tượng của làng quê Việt Nam?"
+      },
+      {
+        "word": "Sân đình",
+        "question": "Không gian công cộng nào trong làng Việt thường được sử dụng để tổ chức các hoạt động cộng đồng?"
+      },
+      {
+        "word": "Bánh mì",
+        "question": "Món ăn nào là sự kết hợp giữa ẩm thực Pháp và Việt Nam, trở thành món ăn đường phố phổ biến?"
+      },
+      {
+        "word": "Cà phê sữa đá",
+        "question": "Đồ uống nào phổ biến ở Việt Nam, được pha từ cà phê đậm đặc và sữa đặc, uống với đá?"
+      },
+      {
+        "word": "Khăn rằn",
+        "question": "Loại khăn nào thường được người dân miền Nam Việt Nam sử dụng, có họa tiết caro đặc trưng?"
+      },
+      {
+        "word": "Nước mắm",
+        "question": "Gia vị nào được làm từ cá lên men, là một phần không thể thiếu trong ẩm thực Việt Nam?"
+      },
+      {
+        "word": "Vịnh Hạ Long",
+        "question": "Di sản thiên nhiên thế giới nào của Việt Nam nổi tiếng với hàng nghìn hòn đảo đá vôi?"
+      },
+      {
+        "word": "Trầu cau",
+        "question": "Tập tục nào trong văn hóa Việt Nam liên quan đến việc ăn trầu và được xem là biểu tượng của tình yêu?"
+      },
+      {
+        "word": "Quạt giấy",
+        "question": "Vật dụng truyền thống nào được sử dụng để làm mát, thường được trang trí bằng thư pháp hoặc tranh?"
+      },
+      {
+        "word": "Gánh hàng",
+        "question": "Phương tiện nào thường được người bán hàng rong sử dụng để vận chuyển và bày bán hàng hóa?"
+      },
+      {
+        "word": "Tết Nguyên đán",
+        "question": "Lễ hội truyền thống quan trọng nhất của Việt Nam, đánh dấu sự khởi đầu của năm mới âm lịch?"
+      },
+      {
+        "word": "Cờ tướng",
+        "question": "Trò chơi cờ truyền thống nào phổ biến ở Việt Nam, tương tự như cờ vua nhưng có luật chơi khác?"
+      },
+      {
+        "word": "Nhà sàn",
+        "question": "Loại nhà truyền thống nào thường thấy ở vùng núi Việt Nam, được xây dựng trên các cột gỗ cao?"
+      },
+      {
+        "word": "Đàn bầu",
+        "question": "Nhạc cụ dân tộc nào của Việt Nam chỉ có một dây, tạo ra âm thanh đặc trưng?"
+      },
+      {
+        "word": "Xích lô",
+        "question": "Phương tiện giao thông nào có ba bánh, thường được sử dụng để chở khách du lịch ở các thành phố lớn?"
+      },
+      {
+        "word": "Trái sầu riêng",
+        "question": "Loại trái cây nào có mùi đặc trưng, được mệnh danh là 'vua của các loại trái cây' ở Đông Nam Á?"
+      },
+      {
+        "word": "Múa lân",
+        "question": "Điệu múa truyền thống nào thường xuất hiện trong các dịp lễ hội, đặc biệt là Tết Trung thu?"
+      },
+      {
+        "word": "Quốc phục",
+        "question": "Trang phục chính thức nào đại diện cho Việt Nam trong các sự kiện quốc tế?"
+      },
+      {
+        "word": "Chùa Một Cột",
+        "question": "Công trình kiến trúc nổi tiếng nào ở Hà Nội có hình dáng như một bông sen nở trên một cột trụ?"
+      },
+      {
+        "word": "Phố cổ",
+        "question": "Khu vực nào trong thành phố thường giữ được kiến trúc và lối sống truyền thống, như ở Hà Nội hay Hội An?"
+      },
+      {
+        "word": "Lịch âm",
+        "question": "Hệ thống tính thời gian nào vẫn được sử dụng song song với lịch dương ở Việt Nam?"
+      },
+      {
+        "word": "Trăng rằm",
+        "question": "Hiện tượng thiên nhiên nào xảy ra vào ngày 15 âm lịch hàng tháng và có ý nghĩa đặc biệt trong văn hóa Việt?"
+      },
+      {
+        "word": "Cồng chiêng",
+        "question": "Nhạc cụ truyền thống nào của các dân tộc Tây Nguyên, thường được sử dụng trong các lễ hội?"
+      },
+      {
+        "word": "Bánh tráng",
+        "question": "Loại bánh mỏng làm từ bột gạo, thường được dùng để cuốn các món ăn hoặc làm snack?"
+      },
+      {
+        "word": "Thuyền thúng",
+        "question": "Loại thuyền nhỏ hình tròn, thường được ngư dân sử dụng ở miền Trung Việt Nam?"
+      },
+      {
+        "word": "Lồng đèn",
+        "question": "Vật dụng trang trí nào thường được trẻ em sử dụng trong dịp Tết Trung thu, có thể phát sáng?"
+      },
+      {
+        "word": "Bún bò Huế",
+        "question": "Món ăn đặc trưng nào của miền Trung Việt Nam, gồm bún và thịt bò trong nước dùng cay?"
+      },
+      {
+        "word": "Dép lào",
+        "question": "Loại dép đơn giản, phổ biến ở Việt Nam, thường được làm từ cao su hoặc nhựa?"
+      },
+      {
+        "word": "Áo tứ thân",
+        "question": "Trang phục truyền thống nào của phụ nữ Việt Nam, gồm bốn vạt áo?"
+      },
+      {
+        "word": "Gỏi cuốn",
+        "question": "Món ăn nào gồm các nguyên liệu cuộn trong bánh tráng, thường ăn kèm với nước chấm?"
+      },
+      {
+        "word": "Tò he",
+        "question": "Đồ chơi truyền thống nào được làm từ bột gạo nếp, thường có hình dáng động vật hoặc nhân vật?"
+      },
+      {
+        "word": "Cây bưởi",
+        "question": "Loại cây ăn quả nào thường được trồng trong vườn nhà Việt Nam, có quả to và vỏ dày?"
+      }
+    ]
+  }
