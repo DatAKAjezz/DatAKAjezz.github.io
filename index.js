@@ -130,7 +130,6 @@ function removeDiacritics(str) {
               .replace(/[\u0300-\u036f]/g, '')
               .replace(/đ/g, 'd').replace(/Đ/g, 'D');
 }
-
 //MARK: VOCABs
 
 let vocabs;
@@ -155,15 +154,30 @@ function showAnswer() {
         const vocabularyDisplay = document.getElementById("vocabularyDisplay");
         vocabularyDisplay.textContent = currentVocab.word;
     }
+    document.getElementById("showAnswerButton").textContent = "Hide answer";
+}
+
+function hideVocab() {
+    const vocabularyDisplay = document.getElementById("vocabularyDisplay");
+    vocabularyDisplay.textContent = currentVocab.question;
+    document.getElementById("showAnswerButton").textContent = "Show answer";
 }
 
 function initializeVocabulary() {
     const newVocabButton = document.getElementById("newVocabButton");
     const showAnswerButton = document.getElementById("showAnswerButton");
+    const vocabularyDisplay = document.getElementById("vocabularyDisplay");
+    document.getElementById("showAnswerButton").textContent = "Show answer";
     
     newVocabButton.onclick = getNewVocabulary;
-    showAnswerButton.onclick = showAnswer;
+    showAnswerButton.onclick = () => {
+        vocabularyDisplay.textContent === currentVocab.word ? hideVocab() : showAnswer();
+    };
+
+    console.log(vocabularyDisplay.textContent);
 }
+
+
 
 window.onload = () => {
     initializeGame();
