@@ -1,34 +1,68 @@
 {
-    "words": [
-      {
-        "word": "san hô",
-        "hint": "Lá phổi của Trái Đất",
-        "revealsNumber": 0
-      },
-      {
-        "word": "sóng thần",
-        "hint": "Một thảm họa thiên nhiên",
-        "revealsNumber": 0
-      },
-      {
-        "word": "băng tan",
-        "hint": "Một trong những hậu quả của hiện tượng nóng lên toàn cầu",
-        "revealsNumber": 0
-      },
-      {
-        "word": "sao biển",
-        "hint": "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt",
-        "revealsNumber": 0
-      },
-      {
-        "word": "cá thờn bơn",
-        "hint": "Người ta hay gọi nó là chiếc lưỡi biết bơi",
-        "revealsNumber": 0
-      },
-      {
-        "word": "thủy triều đỏ",
-        "hint": "Hiện tượng tự nhiên ở biển có màu sắc đặc trưng, thường gây hại cho sinh vật biển",
-        "revealsNumber": 0
-      }
-    ]
-  }
+  "words" : [{
+    "word": "san hô",
+    "hints": [
+      "Lá phổi của Trái Đất",
+      "Sinh vật biển tạo thành rạn",
+      "Có cấu trúc xương vôi",
+      "Môi trường sống của nhiều loài cá",
+      "Nhạy cảm với sự thay đổi nhiệt độ và độ pH của nước biển"
+    ],
+    "revealsNumber": 0
+  },
+  {
+    "word": "sóng thần",
+    "hints": [
+      "Một thảm họa thiên nhiên",
+      "Thường xảy ra sau động đất dưới đáy biển",
+      "Có thể cao tới hàng chục mét",
+      "Gây thiệt hại lớn cho vùng ven biển",
+      "Còn được gọi là tsunami"
+    ],
+    "revealsNumber": 0
+  },
+  {
+    "word": "băng tan",
+    "hints": [
+      "Một trong những hậu quả của hiện tượng nóng lên toàn cầu",
+      "Làm mực nước biển dâng cao",
+      "Ảnh hưởng đến các loài động vật sống ở vùng cực",
+      "Thay đổi dòng hải lưu",
+      "Có thể nhìn thấy rõ ở các sông băng và băng ở Bắc Cực"
+    ],
+    "revealsNumber": 0
+  },
+  {
+    "word": "sao biển",
+    "hints": [
+      "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt",
+      "Thường có năm cánh",
+      "Có thể tái tạo các phần cơ thể bị mất",
+      "Thuộc ngành da gai",
+      "Di chuyển bằng chân ống"
+    ],
+    "revealsNumber": 0
+  },
+  {
+    "word": "cá thờn bơn",
+    "hints": [
+      "Người ta hay gọi nó là chiếc lưỡi biết bơi",
+      "Có hình dạng dẹt",
+      "Cả hai mắt nằm trên một bên của cơ thể",
+      "Có khả năng ngụy trang tuyệt vời",
+      "Thường sống ở đáy biển"
+    ],
+    "revealsNumber": 0
+  },
+  {
+    "word": "thủy triều đỏ",
+    "hints": [
+      "Hiện tượng tự nhiên ở biển có màu sắc đặc trưng, thường gây hại cho sinh vật biển",
+      "Do sự bùng phát của tảo",
+      "Có thể gây ngộ độc cho người và động vật biển",
+      "Thường xảy ra ở vùng nước ấm và giàu dinh dưỡng",
+      "Còn được gọi là sự nở hoa của tảo"
+    ],
+    "revealsNumber": 0
+  }]
+}

@@ -1,6 +1,5 @@
 //MARK: WORDS GUESSING
-
-const words = [
+let words = [
     {
       word: "san hô",
       hints: [
@@ -37,11 +36,11 @@ const words = [
     {
       word: "sao biển",
       hints: [
-        "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt",
-        "Thường có năm cánh",
-        "Có thể tái tạo các phần cơ thể bị mất",
         "Thuộc ngành da gai",
-        "Di chuyển bằng chân ống"
+        "Di chuyển bằng chân ống",
+        "Có thể tái tạo các phần cơ thể bị mất",
+        "Một sinh vật sống dưới nước có khả năng chữa lành siêu việt",
+        "Thường có năm cánh"
       ],
       revealsNumber: 0
     },
@@ -67,11 +66,13 @@ const words = [
       ],
       revealsNumber: 0
     }
-  ];
+]
 
 words.map((val) => {
     val.word = val.word.split(" ").join("");
 });
+
+
 let revealedLetters = [];
 
 // MARK: RENDER()
@@ -387,3 +388,19 @@ window.onload = () => {
     initializeVocabulary();
 };
 
+//MARK: SERVER
+
+function httpGetAsync(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    xmlHttp.send();
+}
+
+httpGetAsync("http://metal-universal-krill.glitch.me/", () => {
+    console.log('hello');
+})

@@ -234,7 +234,7 @@ button:hover {
 
 #scoreboard {
     width: 500px;
-    border-collapse: separate;
+    border-collapse: collapse;
 }
 
 #scoreboard th,
