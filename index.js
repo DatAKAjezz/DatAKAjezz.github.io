@@ -390,17 +390,17 @@ window.onload = () => {
 
 //MARK: SERVER
 
-function httpGetAsync(theUrl, callback)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
-    }
-    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
-    xmlHttp.send();
-}
+// function httpGetAsync(theUrl, callback)
+// {
+//     var xmlHttp = new XMLHttpRequest();
+//     xmlHttp.onreadystatechange = function() { 
+//         if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+//             callback(xmlHttp.responseText);
+//     }
+//     xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+//     xmlHttp.send();
+// }
 
-httpGetAsync("http://metal-universal-krill.glitch.me/", () => {
-    console.log('hello');
-})
+// httpGetAsync("http://metal-universal-krill.glitch.me/", () => {
+//     console.log('hello');
+// })
