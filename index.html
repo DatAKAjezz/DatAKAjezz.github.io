@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trò chơi đoán ô chữ</title>
-    <link rel="icon" type="image/jpg" href="./imgs/logo.jpg">
-    <link rel = "stylesheet" href = "style.css">
-    <style>
-        
-    </style>
+    <link rel="icon" type="image/jpg" href="./imgs/logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
     <header>
-        <div class = "title-container">
-            <div class = "logo">
-                <img src = "imgs/logo.jpg">
+        <div class="title-container">
+            <div class="logo">
+                <img src="imgs/logo.jpg" />
             </div>
-            <div class = "title">
-                WORDS GUESSING!
-            </div>
+            <div class="title">WORDS GUESSING!</div>
         </div>
     </header>
 
-
     <div id="wordsContainer"></div>
-  
-    <div class="hints-vocabs-wrapper">
-        <button id = "hint-btn">Gợi ý</button>
-        <div id="hintContainer"></div>
 
+    <div class="hints-vocabs-wrapper">
+        <button id="hint-btn">Gợi ý</button>
+        <div id="hintContainer"></div>
 
         <div id="vocabularyContainer">
             <div class="button-container">
                 <button id="newVocabButton">Question</button>
-                <button id="showAnswerButton"></button>  
+                <button id="showAnswerButton"></button>
             </div>
             <div id="vocabularyDisplay"></div>
         </div>
     </div>
-    
-    <script src = "index.js"></script>
+    <hr>
+
+    <div id="scoreboardContainer">
+        <h2 style="font-weight: bold; font-family: 'Archivo Black'; font-size: 30px;">SCORE BOARD</h2>
+        <table id="scoreboard">
+            <thead>
+                <tr>
+                    <th>Tên</th>
+                    <th>Số câu giải</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <button id="addPlayerButton">Thêm người chơi</button>
+
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>Congrats!</h2>
+            <p>Enter name:</p>
+            <input type="text" id="nameInput" placeholder="Exp : Hoang Tan Dat" required />
+            <button id="submitName">Gửi</button>
+        </div>
+    </div>
+
+    <script src="index.js">   
+    </script>
 </body>
+
 </html>
