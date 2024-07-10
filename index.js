@@ -259,7 +259,6 @@ function initializeVocabulary() {
             : showAnswer();
     };
 
-    console.log(vocabularyDisplay.textContent);
 }
 
 function revealWord(wordIndex) {

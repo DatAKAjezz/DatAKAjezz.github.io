@@ -25,7 +25,7 @@
         "question": "Món ăn truyền thống nào được làm từ gạo nếp, đậu xanh và thịt lợn, thường xuất hiện trong dịp Tết Nguyên đán?"
       },
       {
-        "word": "Ao làng",
+        "word": "Ao",
         "question": "Yếu tố nào thường xuất hiện trong cấu trúc làng quê Việt Nam, dùng để chứa nước và nuôi cá?"
       },
       {
@@ -53,20 +53,12 @@
         "question": "Loại hình nghệ thuật sân khấu truyền thống nào của miền Nam Việt Nam kết hợp giữa âm nhạc và kịch?"
       },
       {
-        "word": "Võ thuật",
-        "question": "Môn nghệ thuật tự vệ nào có nguồn gốc từ Việt Nam, như Vovinam chẳng hạn?"
-      },
-      {
         "word": "Đũa",
         "question": "Dụng cụ ăn uống nào phổ biến trong văn hóa Việt Nam, thường được làm từ tre hoặc gỗ?"
       },
       {
         "word": "Bún chả",
         "question": "Món ăn đặc trưng của Hà Nội gồm bún, thịt lợn nướng và nước chấm chua ngọt được gọi là gì?"
-      },
-      {
-        "word": "Lễ hội",
-        "question": "Sự kiện văn hóa nào thường diễn ra ở đình làng hoặc đền chùa, mang tính cộng đồng cao?"
       },
       {
         "word": "Đền chùa",
@@ -87,10 +79,6 @@
       {
         "word": "Cà phê sữa đá",
         "question": "Đồ uống nào phổ biến ở Việt Nam, được pha từ cà phê đậm đặc và sữa đặc, uống với đá?"
-      },
-      {
-        "word": "Khăn rằn",
-        "question": "Loại khăn nào thường được người dân miền Nam Việt Nam sử dụng, có họa tiết caro đặc trưng?"
       },
       {
         "word": "Nước mắm",
@@ -141,16 +129,8 @@
         "question": "Điệu múa truyền thống nào thường xuất hiện trong các dịp lễ hội, đặc biệt là Tết Trung thu?"
       },
       {
-        "word": "Quốc phục",
-        "question": "Trang phục chính thức nào đại diện cho Việt Nam trong các sự kiện quốc tế?"
-      },
-      {
         "word": "Chùa Một Cột",
         "question": "Công trình kiến trúc nổi tiếng nào ở Hà Nội có hình dáng như một bông sen nở trên một cột trụ?"
-      },
-      {
-        "word": "Phố cổ",
-        "question": "Khu vực nào trong thành phố thường giữ được kiến trúc và lối sống truyền thống, như ở Hà Nội hay Hội An?"
       },
       {
         "word": "Lịch âm",
