@@ -227,6 +227,8 @@ let Index = 0;
 function getNewVocabulary() {
     currentVocab = vocabs[Index++];
     const vocabularyDisplay = document.getElementById("vocabularyDisplay");
+    document.getElementById("showAnswerButton").textContent = "Show answer";
+
     vocabularyDisplay.textContent = currentVocab.question;
 }
 
